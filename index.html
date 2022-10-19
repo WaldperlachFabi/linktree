@@ -3,7 +3,7 @@
         
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-	    <meta name="theme-color" content="#81d742">
+	    <meta name="theme-color" content="#3ee635">
         <title>Linktree - Fabi</title>
         <link rel="stylesheet" href="./linktree_files/all.min.css">
         <link rel="shortcut icon" href="./linktree_files/profile.png">
@@ -11,22 +11,22 @@
         <style>
             @import  url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
             body {
-                background-image: linear-gradient(135deg, #338ee8 45%, #fa5260 65%);
+                background-image: linear-gradient(135deg, #3ee635 45%, #1f50f0 65%);
                 font-family: 'Roboto', sans-serif;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
             }
 
             .linktree-elem {
-                background-color: #00ddff;
+                background-color: #fa2f2f;
             }
 
             .linktree-elem-mail {
-                background-color: #00ddff;
+                background-color: #fa2f2f;
             }
 
             .linktree-elem:hover {
-                background-color: #fa5260;
+                background-color: #ff8000;
                 cursor: pointer;
                 opacity: 0.6;
                 color: white;
@@ -34,7 +34,7 @@
             }
 
             .linktree-elem-mail:hover {
-                background-color: #d93d4a;
+                background-color: #ff8000;
                 cursor: pointer;
                 opacity: 0.6;
                 color: white;
@@ -108,7 +108,7 @@
                 }
 
                 body {
-                    background-image: linear-gradient(135deg, #338ee8 45%, #f54260 60%) !important;
+                    background-image: linear-gradient(135deg, #3ee635 45%, #1f50f0 60%) !important;
                 }
 
                 .profile_picture {
@@ -187,19 +187,24 @@
             </div>
 
             <div class="linktree-elem-list">
-                <div class="linktree-elem" onclick="tiktok();">
-                    <i class="icon fab fa-tiktok"></i>
-                    <span>TikTok</span>
+				<div class="linktree-elem" onclick="insta();">
+                    <i class="icon fab fa-instagram"></i>
+                    <span>Instagram</span>
                 </div>
-
-                <div class="linktree-elem" onclick="snapchat();">
+				
+				<div class="linktree-elem" onclick="youtube();">
+                    <i class="icon fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </div>
+				
+				<div class="linktree-elem" onclick="snapchat();">
                     <i class="icon fab fa-snapchat"></i>
                     <span>Snapchat</span>
                 </div>
-
-                <div class="linktree-elem" onclick="insta();">
-                    <i class="icon fab fa-instagram"></i>
-                    <span>Instagram</span>
+				
+                <div class="linktree-elem" onclick="tiktok();">
+                    <i class="icon fab fa-tiktok"></i>
+                    <span>TikTok</span>
                 </div>
 
                 <div class="linktree-elem" onclick="twitter();">
@@ -252,6 +257,10 @@
 
             function twitch() {
                 window.open('https://twitch.tv/waldperlachfabi', '_self');
+                return false;
+            }
+			function youtube() {
+                window.open('https://www.youtube.com/channel/UCvlHVLnhAlIvVbSE7ikXTFA', '_self');
                 return false;
             }
 
