@@ -202,6 +202,11 @@
                     <span>Snapchat</span>
                 </div>
 				
+				<div class="linktree-elem" onclick="bereal();">
+                    <i class="icon fab fa-bereal"></i>
+                    <span>BeReal</span>
+                </div>
+				
                 <div class="linktree-elem" onclick="tiktok();">
                     <i class="icon fab fa-tiktok"></i>
                     <span>TikTok</span>
@@ -221,6 +226,11 @@
                     <i class="icon fab fa-twitch"></i>
                     <span>Twitch</span>
                 </div>
+				
+				<div class="linktree-elem" onclick="spotify();">
+                    <i class="icon fab fa-spotify"></i>
+                    <span>Spotify</span>
+                </div>
 
                 <div class="linktree-elem-mail" onclick="mail();">
                     <i class="icon fas fa-envelope"></i>
@@ -232,6 +242,10 @@
         <script type="text/javascript">
             function tiktok() {
                 window.open('https://tiktok.com/@waldperlachfabi', '_self'); 
+                return false;
+            }
+			function bereal() {
+                window.open('https://bere.al/waldperlachfabi', '_self'); 
                 return false;
             }
 
@@ -263,7 +277,10 @@
                 window.open('https://www.youtube.com/channel/UCvlHVLnhAlIvVbSE7ikXTFA', '_self');
                 return false;
             }
-
+			function spotify() {
+                window.open('https://open.spotify.com/artist/6ivh4lS0rfBoFZeERC8gYj', '_self');
+                return false;
+            }
             function mail() {
                 window.open('mailto:mail@waldperlachfabi.de', '_self');
                 return false;
